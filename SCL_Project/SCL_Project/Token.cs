@@ -9,11 +9,14 @@ namespace SCL_Project
 
     public enum TokenType
     {
-        IMPORT,
+        IMPORT, 
+        STRUCT, ENDSTRUCT, STRUCTURES, DEFINETYPE, POINTER,
+        ARRAY,
         IMPLEMENTATION,
-        FUNCTION,
+        FUNCTION, IDENTIFIER,
         IS, VARIABLES, DEFINE,
         OF, TYPE, INTEGER,
+        STRING,
         DOUBLE, BEGIN,
         ENDFUN, DISPLAY,
         SET, INPUT,
@@ -21,9 +24,10 @@ namespace SCL_Project
         ELSE, ENDIF, RETURN,
         EXIT,
 
+
         EQUALS, PLUS, MINUS, MUL, DIV,
         EQUALTO, NOTEQUAL, LESSTHAN, GREATERTHAN, 
-        GREATERTHANEQUAL, LESSTHANEQUAL, 
+        GREATERTHANEQUAL, LESSTHANEQUAL, NOT,
         
         SPACE, COMMA, QUOTATION, TAB,
 
@@ -48,7 +52,7 @@ namespace SCL_Project
 
         public override string ToString()
         {
-            return $"{Type} {Lexeme} {Literal}";
+            return $"{Type} {Lexeme} ";
         }
     }
 

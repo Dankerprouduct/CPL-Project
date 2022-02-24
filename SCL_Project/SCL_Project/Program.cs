@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace SCL_Project // Note: actual namespace depends on the project name.
 {
@@ -10,6 +11,7 @@ namespace SCL_Project // Note: actual namespace depends on the project name.
             if (args.Length > 1)
             {
                 // improper usage
+                Debug.WriteLine("Improper Usage");
             }
             else if (args.Length == 1)
             {
@@ -18,20 +20,26 @@ namespace SCL_Project // Note: actual namespace depends on the project name.
             }
             else
             {
-                
+                RunFile("welcome.scl");
             }
         }
 
         private static void RunFile(string path)
         {
-            byte[] bytes = File.ReadAllBytes(Path.GetFullPath(path)); 
+            string source = File.ReadAllText(Path.GetFullPath(path)); 
             
-            Run(BitConverter.ToString(bytes));
+            Run(source);
         }
 
         private static void Run(string source)
         {
-            
+            Scanner scanner = new Scanner(source);
+            List<Token> tokens = scanner.ScanTokens();
+
+            foreach (var token in tokens)
+            {
+                Console.WriteLine(token);
+            }
         }
     }
 }

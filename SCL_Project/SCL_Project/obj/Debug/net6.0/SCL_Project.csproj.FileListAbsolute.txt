@@ -1,0 +1,15 @@
+C:\Users\danke\Documents\GitHub\CPL-Project\SCL_Project\SCL_Project\bin\Debug\net6.0\SCL_Project.exe
+C:\Users\danke\Documents\GitHub\CPL-Project\SCL_Project\SCL_Project\bin\Debug\net6.0\SCL_Project.deps.json
+C:\Users\danke\Documents\GitHub\CPL-Project\SCL_Project\SCL_Project\bin\Debug\net6.0\SCL_Project.runtimeconfig.json
+C:\Users\danke\Documents\GitHub\CPL-Project\SCL_Project\SCL_Project\bin\Debug\net6.0\SCL_Project.dll
+C:\Users\danke\Documents\GitHub\CPL-Project\SCL_Project\SCL_Project\bin\Debug\net6.0\ref\SCL_Project.dll
+C:\Users\danke\Documents\GitHub\CPL-Project\SCL_Project\SCL_Project\bin\Debug\net6.0\SCL_Project.pdb
+C:\Users\danke\Documents\GitHub\CPL-Project\SCL_Project\SCL_Project\obj\Debug\net6.0\SCL_Project.csproj.AssemblyReference.cache
+C:\Users\danke\Documents\GitHub\CPL-Project\SCL_Project\SCL_Project\obj\Debug\net6.0\SCL_Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danke\Documents\GitHub\CPL-Project\SCL_Project\SCL_Project\obj\Debug\net6.0\SCL_Project.AssemblyInfoInputs.cache
+C:\Users\danke\Documents\GitHub\CPL-Project\SCL_Project\SCL_Project\obj\Debug\net6.0\SCL_Project.AssemblyInfo.cs
+C:\Users\danke\Documents\GitHub\CPL-Project\SCL_Project\SCL_Project\obj\Debug\net6.0\SCL_Project.csproj.CoreCompileInputs.cache
+C:\Users\danke\Documents\GitHub\CPL-Project\SCL_Project\SCL_Project\obj\Debug\net6.0\SCL_Project.dll
+C:\Users\danke\Documents\GitHub\CPL-Project\SCL_Project\SCL_Project\obj\Debug\net6.0\ref\SCL_Project.dll
+C:\Users\danke\Documents\GitHub\CPL-Project\SCL_Project\SCL_Project\obj\Debug\net6.0\SCL_Project.pdb
+C:\Users\danke\Documents\GitHub\CPL-Project\SCL_Project\SCL_Project\obj\Debug\net6.0\SCL_Project.genruntimeconfig.cache
