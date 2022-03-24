@@ -26,12 +26,14 @@ namespace SCL_Project
 
 
         EQUALS, PLUS, MINUS, MUL, DIV,
+        FALSE, 
+        TRUE, NULL,
         EQUALTO, NOTEQUAL, LESSTHAN, GREATERTHAN, 
         GREATERTHANEQUAL, LESSTHANEQUAL, NOT,
         
         SPACE, COMMA, QUOTATION, TAB,
 
-        EOF
+        EOF, EOL
     }
 
     public  class Token

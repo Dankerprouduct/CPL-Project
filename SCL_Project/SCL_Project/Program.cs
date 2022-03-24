@@ -1,10 +1,16 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Security.Cryptography.X509Certificates;
 
 namespace SCL_Project // Note: actual namespace depends on the project name.
 {
     internal class Program
     {
+        public static Environment Environment = new Environment();
+
+        private static Interpreter Interpreter = new Interpreter();
+        public static bool HadRuntimeError = false;
+
         static void Main(string[] args)
         {
 
@@ -36,10 +42,31 @@ namespace SCL_Project // Note: actual namespace depends on the project name.
             Scanner scanner = new Scanner(source);
             List<Token> tokens = scanner.ScanTokens();
 
+
             foreach (var token in tokens)
             {
-                Console.WriteLine(token);
+                //Console.WriteLine(token);
             }
+
+            Parser parser = new Parser(tokens);
+            List<Stmt> statements = parser.Parse();
+
+            if(HadRuntimeError)
+                return;
+
+            ASTPrinter printer = new ASTPrinter();
+            foreach (Stmt stmt in statements)
+            {
+                if (stmt != null)
+                {
+                    Console.WriteLine(printer.Print(stmt));
+                }
+            }
+
+            //Interpreter.Interpret(statements);
+
+            //Console.WriteLine(expr.ToString());
+            Console.ReadKey();
         }
     }
 }
